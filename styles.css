@@ -1,0 +1,214 @@
+#typeDiv {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+
+#txt1 {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+#txt2 {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+
+#content{
+    position: absolute;
+    top: 1%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 20%;
+}
+
+#together{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+#timer{
+    text-align: center;
+    color: white;
+}
+
+#d{
+    font-size: 19px;
+}
+
+#h{
+    font-size: 19px;
+}
+
+#m{
+    font-size: 19px;
+}
+
+#s{
+    font-size: 19px;
+}
+
+#heartTxt, #heartTxt2{
+    position: absolute;
+    display: table;
+    vertical-align: middle;
+    top: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 10%;
+    height: 8%;
+}
+
+#clickMe, #clickMe2{
+    display: inline-block;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#heart, #heart2{
+    width: 100%;
+    height: 100%;
+}
+
+#button, #button2{
+    background-image: url("../pic/love.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-position: center;
+    transition: 0.1s;
+    width: 100%;
+    height: 100%;
+
+}
+
+#button:active, #button2:active {
+    width: 92%;
+    height: 92%;
+}
+
+#imgTxt{
+    position: absolute;
+    display: table;
+    width: 200px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    vertical-align: middle;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+
+}
+
+#img{
+    display: block;
+    left: 0;
+    right: 0;
+    max-width: 600px; /* Maximum width for the image */
+    max-height: 700px; /* Maximum height for the image */
+    width: auto; /* Adjust width based on aspect ratio */
+    height: auto; /* Adjust height based on aspect ratio */
+    margin: auto; /* Center the image horizontally */
+}
+
+#img[src] {
+    visibility: visible; /* Show only when an image source exists */
+}
+
+#Txt{
+    display: inline-block;
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#tmp{
+    display: inline-block;
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#testingCode {
+    position: absolute;
+    top: 20%; /* Adjust the starting point */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    text-align: center;
+    width: 90%; /* Set a reasonable width */
+    max-width: 500px; /* Limit the maximum width */
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+#imageDisplay {
+    display: block; /* Ensure it takes a full row */
+    margin: 0 auto 20px; /* Center the image and add space below */
+    width: 100%; /* Scale to container width */
+    max-width: 400px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+}
+
+#valentineQuestion {
+    display: block; /* Ensure it takes a full row */
+    font-size: 35px; /* Large font size */
+    font-weight: bold; /* Bold text */
+    color: white; /* White text color */
+    margin: 20px 0; /* Space above and below */
+    text-align: center; /* Center text */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text glow for readability */
+}
+
+/* Style for the response buttons container */
+#responseButtons {
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    gap: 20px; /* Add space between the buttons */
+}
+
+/* Style for the Yes button */
+#yesButton,
+#noButton {
+    background-color: #28a745; /* Green for Yes */
+    color: white;
+    font-size: 20px; /* Initial font size */
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px; /* Padding around text */
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease; /* Smooth transition for size changes */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Different background color for No button */
+#noButton {
+    background-color: #dc3545; /* Red for No */
+}
+
+/* Ensure buttons grow proportionally */
+#responseButtons > button {
+    flex-shrink: 0; /* Prevent shrinking */
+    flex-grow: 1; /* Allow buttons to grow */
+    text-align: center;
+}

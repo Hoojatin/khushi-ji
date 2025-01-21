@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta charset="UTF-8">
+    <title>First anniversary of love</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+
+<body style="margin:0px">
+<audio autoplay loop>
+    <source src="music/music.mp3" type="audio/mpeg">
+    Your browser does not support the audio.
+</audio>
+<canvas></canvas>
+<div id="imgTxt">
+    <span id="Txt"></span> <br />
+    <span id="tmp"></span>
+    <img id="img" src="">
+</div>
+<div id="heartTxt">
+    <span id="clickMe">Click!</span>
+    <div id="heart">
+        <button id="button" onclick="play()"></button>
+    </div>
+</div>
+<div id="content">
+    <h2 id="together">We have been together since</h2>
+    <div id="timer">
+        <b id="d"></b> Days
+        <b id="h"></b> Hours
+        <b id="m"></b> Minutes
+        <b id="s"></b> Seconds
+    </div>
+</div>
+
+<div id="heartTxt2" style="display: none;">
+    <span id="clickMe2">Click on your own risk!</span>
+    <div id="heart2">
+        <button id="button2" onclick="play2()"></button>
+    </div>
+</div>
+
+
+<div id = "typeDiv">
+    <span id="txt1"></span> <br />
+    <span id="txt2"></span>
+</div>
+
+
+<div id="testingCode" style="display: none;">
+    <img id="imageDisplay" src="./images/image1.gif" />
+    <h2 id="valentineQuestion" class="text-4xl font-bold italic text-[#bd1e59] my-4">You love me ?</h2>
+    <div class="flex gap-4 pt-[20px] items-center" id="responseButtons">
+        <button id="yesButton" class="bounce2">Yes</button>
+        <button id="noButton">No</button>
+    </div>
+</div>
+
+<script >
+    var ok = 0;
+    var flag = 1;
+    var myImage = document.getElementById("img");
+    var myTxt = document.getElementById("Txt");
+    var imageArray = ["pic/pic1.png", "pic/pic2.png", "pic/pic3.png", "pic/pic4.png", "pic/pic5.png", "pic/pic6.png",
+        "pic/pic7.png", "pic/pic8.png", "pic/pic9.png", "pic/pic10.png", "pic/pic11.png", "pic/pic12.png", "pic/pic13.png",
+        "pic/pic14.png", "pic/pic15.png", "pic/pic16.png"];
+    var imageIndex = 0;
+    var txtArray = ["Now you will got to know about my little champ, just FYI, dont go on this innocent face XD", "She is pretty pretty girl with cherry coke hairs, damnnn, no ?", "This smile, damnnn this smileee 🤌",
+        "Btw, She is an all time foodie", "Women in black ❤️🔥", "Your footballer cutie is here ❤️", "This is cosy khushi, in her comfort zone !!",
+        "Udeee jab jab julfeee teri ❤️", "Btw she is fav of her cousins too ❤️", "Most cutest of cutest pic of my cutieee piee ❤️", "Btw She is my personal pokemon ❤️",
+        "Beauty in Dalhousie ❤️", "Prettiest girl in Mountains ❤️", "Hai koi chance kii iss smile par banda ❤️ naa khoyee ?", "Aesthetic Beauty Cutiee ❤️", "We ❤️"];
+    var len = imageArray.length;
+    var t = 0;
+</script>
+
+<script type="text/javascript" src="./js/stars.js"></script>
+<script type="text/javascript" src="./js/typeWriter.js"></script>
+<script type="text/javascript" src="./js/playImg.js"></script>
+<script type="text/javascript" src="./js/cat.js"></script>
+<script type="text/javascript" src="./js/date.js"></script>
+</body>
+</html>
