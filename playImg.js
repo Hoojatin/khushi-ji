@@ -51,13 +51,13 @@ function play(){
 	let buttonWidth = 80;
 	let fontSize = 20; // Starting font size in pixels
 	const imagePaths = [
-		"./images/image1.gif",
-		"./images/image2.gif",
-		"./images/image3.gif",
-		"./images/image4.gif",
-		"./images/image5.gif",
-		"./images/image6.gif",
-		"./images/image7.gif"
+		"image1.gif",
+		"image2.gif",
+		"image3.gif",
+		"image4.gif",
+		"image5.gif",
+		"image6.gif",
+		"image7.gif"
 	];
 
 	noButton.addEventListener('click', function () {
@@ -87,7 +87,7 @@ function play(){
 	});
 
 	yesButton.addEventListener('click', () => {
-		imageDisplay.src = './images/image7.gif'; // Change to image7.gif
+		imageDisplay.src = 'image7.gif'; // Change to image7.gif
 		valentineQuestion.textContent = "Yayyy!! :3"; // Change the question text
 		responseButtons.style.display = 'none'; // Hide both buttons
 		const heartTxt2 = document.getElementById("heartTxt2");
